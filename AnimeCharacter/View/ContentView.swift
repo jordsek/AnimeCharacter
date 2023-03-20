@@ -13,7 +13,6 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                //CharacterDetailView(character: character)
                 List(viewModel.characterArray){ character in
                     NavigationLink{
                        CharacterDetailView(character: character)
@@ -21,12 +20,6 @@ struct ContentView: View {
                         HStack {
                             
                             URLImage(url: URL(string: "\(baseURL)\(character.icon)"))
-//                                .border(.cyan)
-//                                .aspectRatio(contentMode: .fit)
-//                                .overlay(
-//                                            RoundedRectangle(cornerRadius: 20)
-//                                                .stroke(Color.purple, lineWidth: 5))
-                                                        
                             }
                        
                             Spacer()
@@ -50,7 +43,7 @@ struct ContentView: View {
         }
         
     }
-//}
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

@@ -15,15 +15,7 @@ struct CharacterDetailView: View {
             VStack{
               
                 URLImage(url: URL(string: "\(baseURL)\(character.img)"))
-    //            AsyncImage(url: URL(string: "\(baseURL)\(character.img)")){ image in
-    //                              image.resizable()
-    //                                  .aspectRatio(contentMode: .fit)
-    //                                  .border(.indigo)
-    //                          }placeholder: {
-    //                              ProgressView()
-    //                          }
-                
-                    
+
                     VStack{
                         Text("Name: \(character.localizedName)")
                         Text("Attack name: \(character.name)")
