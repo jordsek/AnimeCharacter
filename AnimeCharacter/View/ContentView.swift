@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var viewModel = AnimeCharacterViewModel(networkManager: NetworkManager())
-    var baseURL = "https://api.opendota.com"
+    //@StateObject var viewModel = AnimeCharacterViewModel(networkManager: NetworkManager())
+    @StateObject var viewModel: CharacterViewModel
     var body: some View {
         NavigationStack {
             VStack {
@@ -17,24 +17,15 @@ struct ContentView: View {
                     NavigationLink{
                        CharacterDetailView(character: character)
                     }label: {
-                        HStack {
-                            
-                            URLImage(url: URL(string: "\(baseURL)\(character.icon)"))
-                            }
-                       
-                            Spacer()
-
-                            VStack {
-                                Text(character.localizedName)
-                                    .font(.title)
-                                    .fontWeight(.medium)
-                                    .foregroundColor(.black)
-                            }
-                        }
+                       URLImage(url: URL(string: "\(APIEndPoint1.baseUrl)\(character.icon)"))
+                        
+                        Spacer()
+                        Text(character.localizedName)
+                            .modifier(LocalisedText())
+                       }
                    }
                 
                 }.task {
-                    
                         await viewModel.getCharacterList(urlString: APIEndPoint.UsersListAPIEndPoint)
                 }
                 .navigationTitle("Click on a character")
@@ -47,6 +38,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(viewModel: CharacterViewModel(repository: CharacterRepositoryImplementation(networkManager: NetworkManager())))
     }
 }

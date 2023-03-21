@@ -7,7 +7,7 @@
 
 import Foundation
 @MainActor
-class AnimeCharacterViewModel: ObservableObject{
+final class AnimeCharacterViewModel: ObservableObject{
     @Published var characterArray: [Character] = []
     @Published var customError: NetworkError?
     let networkManager : Networkable
@@ -36,6 +36,7 @@ class AnimeCharacterViewModel: ObservableObject{
             }else{
                 customError = NetworkError.dataNotFound
             }
+            
         }
     }
     

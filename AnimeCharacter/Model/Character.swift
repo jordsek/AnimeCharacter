@@ -6,7 +6,7 @@
 //
 
 import Foundation
-struct Character: Codable,Identifiable,Hashable {
+struct Character: Decodable,Identifiable,Hashable {
     
     let id: Int
     let name: String
@@ -14,8 +14,7 @@ struct Character: Codable,Identifiable,Hashable {
     let attackType: String
     let img: String
     let icon: String
-    let attackRange: Int
-    let attackRate: Double
+  
     
     
     
@@ -25,8 +24,7 @@ struct Character: Codable,Identifiable,Hashable {
         case localizedName = "localized_name"
         case attackType = "attack_type"
         case img, icon
-        case attackRange = "attack_range"
-        case attackRate = "attack_rate"
+        
         
 
     }
