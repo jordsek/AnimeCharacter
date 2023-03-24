@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ContentView: View {
-    //@StateObject var viewModel = AnimeCharacterViewModel(networkManager: NetworkManager())
     @StateObject var viewModel: CharacterViewModel
     var body: some View {
         NavigationStack {

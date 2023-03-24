@@ -7,21 +7,21 @@
 
 import Foundation
 @testable import AnimeCharacter
-
-class FakeNetworkManager: Networkable{
+//
+class FakeNetworkManager: Fetchable{
     func getDataFromAPI(url: URL) async throws -> Data {
         do{
             let bundle = Bundle(for: FakeNetworkManager.self)
-            guard let path = bundle.url(forResource: "CharacterSampleTestFile", withExtension: "json")else {
-                throw NetworkError.invalidURL
-            }
+            guard let path = bundle.url(forResource: url.absoluteString, withExtension: "json")else {
+                            throw NetworkError.invalidURL
+                        }
             let data = try Data(contentsOf: path)
             return data
-        }catch let error{
-            print(error.localizedDescription)
+        }catch{
+            
             throw NetworkError.dataNotFound
         }
-        
-        
+
+
     }
 }

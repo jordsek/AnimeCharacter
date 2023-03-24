@@ -6,19 +6,25 @@
 //
 
 import Foundation
-protocol Networkable{
-    func getDataFromAPI(url: URL) async throws -> Data
+import Combine
+
+
+struct NetworkManager {
+    let urlSession: Networking
+    init(urlSession: Networking = URLSession.shared){
+        self.urlSession = urlSession
+    }
 }
 
-final class NetworkManager: Networkable{
+extension NetworkManager: Fetchable {
     func getDataFromAPI(url: URL) async throws -> Data {
         
         do{
-            let (data,_) = try await URLSession.shared.data(from: url)
+            let (data, _) = try await urlSession.data(from: url, delegate: nil)
             return data
         }catch let error{
-            print(error.localizedDescription)
-            throw NetworkError.dataNotFound
+            throw error
         }
     }
 }
+

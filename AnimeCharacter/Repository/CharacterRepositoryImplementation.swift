@@ -9,16 +9,18 @@ import Foundation
 
 final class CharacterRepositoryImplementation: CharactersRepository {
     
-    
-    
-    var networkManager: Networkable
-    init(networkManager: Networkable) {
-        self.networkManager = networkManager
-    }
+    var networkManager: Fetchable
+    init(networkManager: Fetchable) {
+            self.networkManager = networkManager
+        }
     func getCharacters(url: URL) async throws -> [Character] {
-        let data = try await networkManager.getDataFromAPI(url: url)
-        let result = try JSONDecoder().decode([Character].self, from: data)
-        return result
+        do {
+            let data = try await networkManager.getDataFromAPI(url: url)
+            let result = try JSONDecoder().decode([Character].self, from: data)
+            return result
+        }catch {
+            throw error
+        }
     }
     
     

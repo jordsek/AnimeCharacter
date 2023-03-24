@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		030D8AF529CC7629008F15C0 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030D8AF429CC7629008F15C0 /* Networking.swift */; };
+		030D8AF729CC7BED008F15C0 /* Fetchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030D8AF629CC7BED008F15C0 /* Fetchable.swift */; };
+		030D8AFA29CC9E50008F15C0 /* NetworkingMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030D8AF929CC9E50008F15C0 /* NetworkingMock.swift */; };
+		030D8AFC29CC9FAD008F15C0 /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030D8AFB29CC9FAD008F15C0 /* NetworkManagerTests.swift */; };
+		030D8B0329CCAD27008F15C0 /* CharactersRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030D8B0229CCAD27008F15C0 /* CharactersRepositoryTests.swift */; };
+		030D8B0629CCBE4F008F15C0 /* FakeCharacterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030D8B0529CCBE4F008F15C0 /* FakeCharacterRepository.swift */; };
 		036A8BAA29C5F1B1006757AA /* AnimeCharacterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036A8BA929C5F1B1006757AA /* AnimeCharacterApp.swift */; };
 		036A8BAC29C5F1B1006757AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036A8BAB29C5F1B1006757AA /* ContentView.swift */; };
 		036A8BAE29C5F1B4006757AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 036A8BAD29C5F1B4006757AA /* Assets.xcassets */; };
@@ -19,7 +25,7 @@
 		036A8BDC29C5F530006757AA /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036A8BDB29C5F530006757AA /* NetworkError.swift */; };
 		036A8BDE29C5F550006757AA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036A8BDD29C5F550006757AA /* NetworkManager.swift */; };
 		036A8BE429C620E4006757AA /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036A8BE329C620E4006757AA /* CharacterDetailView.swift */; };
-		036A8BE829C652DB006757AA /* AnimeCharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036A8BE729C652DB006757AA /* AnimeCharacterViewModel.swift */; };
+		03A1F27C29CDB35F00B6AF27 /* CharacterSampleTestFile.json in Resources */ = {isa = PBXBuildFile; fileRef = 03D04CF429C75B88008F9FCD /* CharacterSampleTestFile.json */; };
 		03B8780B29C9CDD800CC1C48 /* CharactersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B8780A29C9CDD800CC1C48 /* CharactersRepository.swift */; };
 		03B8780D29C9CE0200CC1C48 /* CharacterRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B8780C29C9CE0200CC1C48 /* CharacterRepositoryImplementation.swift */; };
 		03B8780F29C9D4FF00CC1C48 /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B8780E29C9D4FF00CC1C48 /* CharacterViewModel.swift */; };
@@ -51,6 +57,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		030D8AF429CC7629008F15C0 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		030D8AF629CC7BED008F15C0 /* Fetchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fetchable.swift; sourceTree = "<group>"; };
+		030D8AF929CC9E50008F15C0 /* NetworkingMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingMock.swift; sourceTree = "<group>"; };
+		030D8AFB29CC9FAD008F15C0 /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
+		030D8B0229CCAD27008F15C0 /* CharactersRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersRepositoryTests.swift; sourceTree = "<group>"; };
+		030D8B0529CCBE4F008F15C0 /* FakeCharacterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeCharacterRepository.swift; sourceTree = "<group>"; };
 		036A8BA629C5F1B1006757AA /* AnimeCharacter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimeCharacter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		036A8BA929C5F1B1006757AA /* AnimeCharacterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeCharacterApp.swift; sourceTree = "<group>"; };
 		036A8BAB29C5F1B1006757AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,7 +78,6 @@
 		036A8BDB29C5F530006757AA /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		036A8BDD29C5F550006757AA /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		036A8BE329C620E4006757AA /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
-		036A8BE729C652DB006757AA /* AnimeCharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeCharacterViewModel.swift; sourceTree = "<group>"; };
 		03B8780A29C9CDD800CC1C48 /* CharactersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersRepository.swift; sourceTree = "<group>"; };
 		03B8780C29C9CE0200CC1C48 /* CharacterRepositoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepositoryImplementation.swift; sourceTree = "<group>"; };
 		03B8780E29C9D4FF00CC1C48 /* CharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
@@ -106,6 +117,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		030D8AF829CC9CAC008F15C0 /* NetworkLayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				030D8AF929CC9E50008F15C0 /* NetworkingMock.swift */,
+				030D8AFB29CC9FAD008F15C0 /* NetworkManagerTests.swift */,
+			);
+			path = NetworkLayerTests;
+			sourceTree = "<group>";
+		};
+		030D8AFE29CCAB45008F15C0 /* RepositoryTest */ = {
+			isa = PBXGroup;
+			children = (
+				030D8B0229CCAD27008F15C0 /* CharactersRepositoryTests.swift */,
+				03D04CF229C75862008F9FCD /* FakeNetworkManager.swift */,
+			);
+			path = RepositoryTest;
+			sourceTree = "<group>";
+		};
+		030D8AFF29CCAC57008F15C0 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				03D04CF429C75B88008F9FCD /* CharacterSampleTestFile.json */,
+				03D04CF529C7726B008F9FCD /* CharacterSampleNodata.json */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		030D8B0429CCBDEA008F15C0 /* ViewModelTest */ = {
+			isa = PBXGroup;
+			children = (
+				036A8BBA29C5F1B4006757AA /* AnimeCharacterTests.swift */,
+				03D04CF029C751FA008F9FCD /* AnimeCharacterViewModelTest.swift */,
+				030D8B0529CCBE4F008F15C0 /* FakeCharacterRepository.swift */,
+			);
+			path = ViewModelTest;
+			sourceTree = "<group>";
+		};
 		036A8B9D29C5F1B1006757AA = {
 			isa = PBXGroup;
 			children = (
@@ -152,11 +200,10 @@
 		036A8BB929C5F1B4006757AA /* AnimeCharacterTests */ = {
 			isa = PBXGroup;
 			children = (
-				036A8BBA29C5F1B4006757AA /* AnimeCharacterTests.swift */,
-				03D04CF029C751FA008F9FCD /* AnimeCharacterViewModelTest.swift */,
-				03D04CF229C75862008F9FCD /* FakeNetworkManager.swift */,
-				03D04CF429C75B88008F9FCD /* CharacterSampleTestFile.json */,
-				03D04CF529C7726B008F9FCD /* CharacterSampleNodata.json */,
+				030D8B0429CCBDEA008F15C0 /* ViewModelTest */,
+				030D8AF829CC9CAC008F15C0 /* NetworkLayerTests */,
+				030D8AFE29CCAB45008F15C0 /* RepositoryTest */,
+				030D8AFF29CCAC57008F15C0 /* json */,
 			);
 			path = AnimeCharacterTests;
 			sourceTree = "<group>";
@@ -177,6 +224,8 @@
 			children = (
 				036A8BDB29C5F530006757AA /* NetworkError.swift */,
 				036A8BDD29C5F550006757AA /* NetworkManager.swift */,
+				030D8AF429CC7629008F15C0 /* Networking.swift */,
+				030D8AF629CC7BED008F15C0 /* Fetchable.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -184,7 +233,6 @@
 		036A8BD429C5F1DA006757AA /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				036A8BE729C652DB006757AA /* AnimeCharacterViewModel.swift */,
 				03B8780E29C9D4FF00CC1C48 /* CharacterViewModel.swift */,
 			);
 			path = ViewModel;
@@ -342,6 +390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03D04CF629C7726B008F9FCD /* CharacterSampleNodata.json in Resources */,
+				03A1F27C29CDB35F00B6AF27 /* CharacterSampleTestFile.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,13 +414,14 @@
 				036A8BAA29C5F1B1006757AA /* AnimeCharacterApp.swift in Sources */,
 				03D04CEE29C73F08008F9FCD /* URLImage.swift in Sources */,
 				036A8BD829C5F4F8006757AA /* APIEndPoints.swift in Sources */,
+				030D8AF529CC7629008F15C0 /* Networking.swift in Sources */,
 				03B8780D29C9CE0200CC1C48 /* CharacterRepositoryImplementation.swift in Sources */,
+				030D8AF729CC7BED008F15C0 /* Fetchable.swift in Sources */,
 				03B8780B29C9CDD800CC1C48 /* CharactersRepository.swift in Sources */,
 				036A8BDA29C5F518006757AA /* Character.swift in Sources */,
 				03B8780F29C9D4FF00CC1C48 /* CharacterViewModel.swift in Sources */,
 				03D04CEC29C73976008F9FCD /* ImageLoader.swift in Sources */,
 				036A8BDC29C5F530006757AA /* NetworkError.swift in Sources */,
-				036A8BE829C652DB006757AA /* AnimeCharacterViewModel.swift in Sources */,
 				036A8BE429C620E4006757AA /* CharacterDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,9 +430,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				030D8AFC29CC9FAD008F15C0 /* NetworkManagerTests.swift in Sources */,
 				036A8BBB29C5F1B4006757AA /* AnimeCharacterTests.swift in Sources */,
+				030D8AFA29CC9E50008F15C0 /* NetworkingMock.swift in Sources */,
+				030D8B0329CCAD27008F15C0 /* CharactersRepositoryTests.swift in Sources */,
 				03D04CF129C751FA008F9FCD /* AnimeCharacterViewModelTest.swift in Sources */,
 				03D04CF329C75862008F9FCD /* FakeNetworkManager.swift in Sources */,
+				030D8B0629CCBE4F008F15C0 /* FakeCharacterRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
