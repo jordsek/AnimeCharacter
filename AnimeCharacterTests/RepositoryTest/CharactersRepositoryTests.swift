@@ -29,9 +29,11 @@ final class CharactersRepositoryTests: XCTestCase {
             //XCTAssertEqual(arr.c.characters.lo)
             //XCTAssertEqual(self.cg.characterArray.count, 0)
         //XCTAssertEqual("Anti-Mage", character?.localizedName)
-      
-         
-       
+    }
+    
+    func test_when_get_character_list_fails() async throws{
+        let list = try? await characterRepositoryImplementation.getCharacters(url: URL(string: "CharacterSampleNodata")!)
+        XCTAssertNil(list)
     }
 
     func testPerformanceExample() throws {

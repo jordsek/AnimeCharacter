@@ -18,13 +18,15 @@ final class AnimeCharacterViewModelTest: XCTestCase {
     override func tearDownWithError() throws {
         
     }
+    
     //When url is correct, you should have some data in CharacterArray
     func testGetCharacterList_When_data_isCorrect() async{
         let fakeCharacterRepository = FakeCharacterRepository()
         let characterViewModel = await CharacterViewModel(repository: fakeCharacterRepository)
         
+        
         await characterViewModel.getCharacterList(urlString: "CharacterSampleTestFile")
-        let characterList = await characterViewModel.characterArray
+        let characterList =  await characterViewModel.characterArray
         XCTAssertNotNil(characterList)
         XCTAssertEqual("Anti-Mage", characterList.first?.localizedName)
         XCTAssertEqual("Melee", characterList.first?.attackType)
