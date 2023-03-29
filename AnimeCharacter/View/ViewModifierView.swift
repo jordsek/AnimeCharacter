@@ -24,5 +24,6 @@ struct LocalisedText: ViewModifier{
             .font(.title)
             .fontWeight(.medium)
             .foregroundColor(.black)
+            .padding(.vertical, 25)
     }
 }
