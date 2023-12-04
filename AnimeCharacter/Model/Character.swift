@@ -30,5 +30,14 @@ struct Character: Decodable,Identifiable,Hashable {
     }
 }
 
+let characterList = Character(
+    id: 1,
+    name: "npc_dota_hero_antimage",
+    localizedName: "Anti-Mage",
+    attackType: "Melee",
+    img: "/apps/dota2/images/dota_react/heroes/antimage.png?",
+    icon: "/apps/dota2/images/dota_react/heroes/icons/antimage.png?"
+)
 
     
+

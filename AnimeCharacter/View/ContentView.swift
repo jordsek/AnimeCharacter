@@ -23,6 +23,7 @@ struct ContentView: View {
                             .modifier(LocalisedText())
                        }
                    }
+                .listStyle(PlainListStyle())
                 
                 }.task {
                         await viewModel.getCharacterList(urlString: APIEndPoint.UsersListAPIEndPoint)

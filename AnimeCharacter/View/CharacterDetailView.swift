@@ -18,7 +18,7 @@ struct CharacterDetailView: View {
               
                 URLImage(url: URL(string: "\(APIEndPoint1.baseUrl)\(character.img)"))
 
-                    VStack{
+                    VStack(alignment: .leading, spacing: 2){
                         Text("\(name) \(character.localizedName)")
                         Text("\(attackName) \(character.name)")
                         Text("\(attackType) \(character.attackType)")
@@ -35,7 +35,7 @@ struct CharacterDetailView: View {
 struct CharacterDetailView_Previews: PreviewProvider {
     var character: Character
     static var previews: some View {
-        CharacterDetailView(character: Character(id: 0, name: "", localizedName: "", attackType: "", img: "", icon: ""))
+        CharacterDetailView(character: characterList)
     }
 }
 
